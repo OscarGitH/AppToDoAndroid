@@ -1,0 +1,105 @@
+<!-- task_desc_activity.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskDescActivity">
+
+    <!-- Titre de la tâche -->
+    <TextView
+        android:id="@+id/titleLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLabelTextView"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp" />
+
+    <!-- Description de la tâche -->
+    <TextView
+        android:id="@+id/descriptionLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionLabelTextView"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp" />
+
+    <!-- Date d'échéance de la tâche -->
+    <TextView
+        android:id="@+id/dueDateLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date d'échéance :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/dueDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dueDateLabelTextView"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp" />
+
+    <!-- Durée de la tâche -->
+    <TextView
+        android:id="@+id/durationLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durée :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/dueDateTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/durationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durationLabelTextView"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp" />
+
+    <!-- Bouton Fermer -->
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durationTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Fermer" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durationTextView"
+        android:layout_marginTop="28dp"
+        android:text="Edit" />
+
+</RelativeLayout>
